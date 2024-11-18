@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('../images/1.temple.png');
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>After days of labor, you finally stabilize the floor, laying down new stone and reinforcing the foundation of 
+            the crumbling temple. The weight of the work lifts from your shoulders, but just as you catch your breath, Hermes reappears, 
+            his grin wider than ever. "Well done, traveler. But there's more to be done."</p>
+        <p>You look up to see the towering pillars - once grand and strong - now leaning, cracked, and unstable. "The pillars must be 
+            restored next. Without them, the roof will fall, and the temple will remain forgotten forever." </p>
+        <p>You swallow, your hands still sore from the floor repairs. "I'm no mason, Hermes." </p>
+        <p>"You're a builder of journeys, remember?" Hermes teases, his eyes glinting with divine mischief. "One stone at a time. Repair 
+            the pillars, and the temple will rise again - its strength will mirror the faith of the people." </p>
+        <p>With a deep breath, you set to work. Each pillar is a challenge, cracked by time and neglect, but you are determined. Slowly, 
+            piece by piece, the stones come together, their ancient strength returning with each new layer you add. </p>
+        <p>As you work, you remember the story of Hermes' first bit of mischief.
+        </p>
+    </div>
+    <div class="center">
+        <h1>What symbol of Hermes does the mosaic depict?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Let my heart guide me</button>
+    </div>
+</body>
+</html>
