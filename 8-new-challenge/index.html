@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(5, 5, 5, 0.759),rgba(0,0,0,0.3)), 
+                url('../images/2.village.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p> Days after the battle at the temple, word spreads beyond mortal ears and into the realm of the gods. You sense the growing attention, 
+            a silent ripple in the air, as if unseen eyes have turned toward you, appraising. You think little of it at first, focusing instead 
+            on welcoming new visitors and maintaining the temple. But one evening, as the last rays of sunlight fade over the hills, a new 
+            presence fills the air - strong and calm, like moonlight glinting on the surface of a quiet lake.</p>
+
+        <p> Before you stands Artemis, goddess of the hunt and protector of the wild. Her eyes are sharp, yet there’s warmth in her gaze. She 
+            appraises you quietly, her bow slung over her shoulder, a silver crown gleaming faintly atop her brow.</p>
+        <p>“You have done a great honor for Hermes,” she says, her voice soft but commanding. “And your skills in rebuilding the temple have 
+            not gone unnoticed.” She gestures to the land beyond the temple, vast and untamed. “I have need of someone like you. I am planning 
+            a city - a sanctuary nestled within nature, a place of balance and beauty.”</p>
+        <p>The weight of her words settles over you. To build a city, and for the goddess Artemis, no less - this is an honor, a calling, 
+            perhaps even a test. You nod, feeling your heart race with excitement and a hint of trepidation.
+            Artemis tilts her head slightly, a small smile crossing her lips. “Do you accept this task, builder of temples?” she asks.
+            You bow low, sensing the significance of this moment. “It would be my honor, goddess.”</p>
+        <p>Artemis steps forward, laying a hand on your shoulder. “Then we shall begin. There is much work to be done. A city of nature and 
+            peace, where the wild and the civilized live side by side - such a place must be carefully woven.”</p>
+        <p>As she withdraws, you feel her blessing settle over you like a mantle. Together, you will plan and build a city worthy of the gods, 
+            a place where nature and humankind will meet in harmony.</p>
+    </div>
+    
+    <div class="center">
+        <h1>What should the name of the new city be?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">My heart will guide me</button>
+    </div>
+</body>
+</html>
