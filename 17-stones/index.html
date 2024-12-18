@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(5, 5, 5, 0.759),rgba(0,0,0,0.3)), 
+                url('../images/3.owl.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p> The owl does several more loops above the clearing, before flying off.  It flies into the distance as other owl swoops into
+            the clearing 
+            holding a piece of parchment and settles on another stone looking at you expectantly.
+            Following the owl's lead, you walk over to a large stone that has several circles carved into the surface. You notice that 
+            there are small stone pieces that look like they might fit into the holes in the large stone.
+        </p>
+
+        <p>The parchment held by this owl describes the time a young girl named Arachne challenged Athena to a weaving contest.
+            Although she wove beautiful tapestries showing events from the lives of the 
+            gods, she stood no chance against Athena who used the sunlight and starlight to create a tapestry that
+            depicted the creation of the world.
+        </p>
+    </div>
+    
+    
+    <div class="center">
+        <h1>What animal is part of the story of Arachne?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">My heart will guide me</button>
+    </div>
+</body>
+</html>
