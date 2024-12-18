@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(5, 5, 5, 0.759),rgba(0,0,0,0.3)), 
+                url('../images/3.owl.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p> This time you aren't surprised when you see another owl fly into the clear, circle over your head several times,
+            then alight on a stone.  Even from a distance, you can tell this stone is different than the others. With the owl
+            hooting gently and dancing atop the stone, you approach to see that there are 6 colorful flowers painted onto it.
+        </p>
+        <p>You look expectantly at the owl, waiting for it to give you another hint, but you don't see any pieces of parchment
+            and the owl isn't giving any clues as to where you should look.  Instead, it just continues doing a little dance.
+            As you watch the somewhat awkward movements of its legs, you see that it has 8 colorful beaded bracelets - the same colors
+            as the flowers on the stone. Unsure of what to do, you hesitantly ask the owl if you could see the bracelets, and it 
+            stops dancing long enough for you to untie them. 
+
+        </p>
+    </div>
+    <div class="center">
+        <img src="flowers.png" width="800">
+        </div>
+
+    
+    <div class="center">
+        <h1>What reminder does Athena have painted on the stone?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">My heart will guide me</button>
+    </div>
+</body>
+</html>
